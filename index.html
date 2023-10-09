@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav> 
             <div class="container">
                 <div class="logo">
                     <img src="img/logo1.png" alt="Kesehatan+ Logo">
@@ -22,17 +22,65 @@
             </div>
         </nav>
     </header>
-
-    <div class="container">
+    <section class="about" id="about">
+    <!-- <div class="container"> -->
         <div class="main-content">
             <h2>Makanan Sehat untuk Hidup Seimbang</h2>
             <p>Dalam hidup yang sibuk ini, seringkali kita lupa betapa pentingnya makanan sehat bagi kesejahteraan kita. Makanan adalah bahan bakar tubuh kita, dan memilih makanan yang tepat dapat memiliki dampak besar pada kesehatan fisik dan mental kita.</p>
             <a href="#" class="cta-button">Pelajari Lebih Lanjut</a>
         </div>
+    </section>
+    <div class="tbl" id="tbl">
+        <h2> Data Pasien </h2>
+    </div>
+     <table>
+        <tr>
+            <th>Nama</th>
+            <th>Usia</th>
+            <th>Alamat</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>30</td>
+            <td>Tegal</td>
+        </tr>
+        <tr>
+            <td>Jane Smith</td>
+            <td>28</td>
+            <td>Tegal</td>
+        </tr>
+    </table>
+
+    <!-- Tambahkan kode formulir di sini -->
+    <form action="proses.php" method="post">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required>
+
+        <label for="usia">Usia:</label>
+        <input type="text" id="usia" name="usia" required>
+
+        <label for="alamat">Alamat:</label>
+        <textarea id="alamat" name="alamat" rows="4" required></textarea>
+
+        <label for="jenis_kelamin">Jenis Kelamin:</label>
+        <select id="jenis_kelamin" name="jenis_kelamin">
+            <option value="laki-laki">Laki-Laki</option>
+            <option value="perempuan">Perempuan</option>
+        </select>
+
+        <input type="submit" value="Submit">
+    </form>
+    
+        
+    <!-- <section class="articel" id="articel">
+        <div>
+            <h2></h2>
+        </div>
+    </section> -->
     </div>
 
     <footer>
-        <div class="container">
+        <div class="Footer">
             <p>&copy; 2023 Pharmavision</p>
         </div>
     </footer>
