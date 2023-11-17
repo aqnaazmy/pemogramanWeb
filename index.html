@@ -3,85 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aqnaazmy</title>
     <link rel="stylesheet" href="style.css">
-    <title>Pharmavision</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <header>
-        <nav> 
-            <div class="container">
-                <div class="logo">
-                    <img src="img/logo1.png" alt="Kesehatan+ Logo">
-                </div>
-                <ul class="nav-links">
-                    <li><a href="#">Beranda</a></li>
-                    <li><a href="#">Tentang Kami</a></li>
-                    <li><a href="#">Artikel</a></li>
-                    <li><a href="#">Kontak</a></li>
+    <!--navbar-->
+    <div class="navBar">
+        <nav>
+            <div class="logo">
+                <a href="#home">
+                    <img src="img/logo1.png" alt="My Logo">
+                </a>
+            </div>
+            <div class="sideNav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#services">Article</a></li>
+                    <li><a href="#contact">Contac</a></li>
                 </ul>
             </div>
         </nav>
-    </header>
-    <section class="about" id="about">
-    <!-- <div class="container"> -->
-        <div class="main-content">
-            <h2>Makanan Sehat untuk Hidup Seimbang</h2>
-            <p>Dalam hidup yang sibuk ini, seringkali kita lupa betapa pentingnya makanan sehat bagi kesejahteraan kita. Makanan adalah bahan bakar tubuh kita, dan memilih makanan yang tepat dapat memiliki dampak besar pada kesehatan fisik dan mental kita.</p>
-            <a href="#" class="cta-button">Pelajari Lebih Lanjut</a>
+    </div>
+
+    <!--hero section -->
+    <section class="hero-section" id="home">
+        <div class="hero-container">
+            <div class="judul">
+                <h4>Selamat Datang di Pharmavision, Perwujudan Kesehatan Digital Masa Depan!</h4>
+            </div>
         </div>
     </section>
-    <div class="tbl" id="tbl">
-        <h2> Data Pasien </h2>
-    </div>
-     <table>
-        <tr>
-            <th>Nama</th>
-            <th>Usia</th>
-            <th>Alamat</th>
-        </tr>
-        <tr>
-            <td>John Doe</td>
-            <td>30</td>
-            <td>Tegal</td>
-        </tr>
-        <tr>
-            <td>Jane Smith</td>
-            <td>28</td>
-            <td>Tegal</td>
-        </tr>
-    </table>
 
-    <!-- Tambahkan kode formulir di sini -->
-    <form action="proses.php" method="post">
-        <label for="nama">Nama:</label>
-        <input type="text" id="nama" name="nama" required>
-
-        <label for="usia">Usia:</label>
-        <input type="text" id="usia" name="usia" required>
-
-        <label for="alamat">Alamat:</label>
-        <textarea id="alamat" name="alamat" rows="4" required></textarea>
-
-        <label for="jenis_kelamin">Jenis Kelamin:</label>
-        <select id="jenis_kelamin" name="jenis_kelamin">
-            <option value="laki-laki">Laki-Laki</option>
-            <option value="perempuan">Perempuan</option>
-        </select>
-
-        <input type="submit" value="Submit">
-    </form>
-    
-        
-    <!-- <section class="articel" id="articel">
-        <div>
-            <h2></h2>
+    <!--about us-->
+    <section id="about">
+        <div class="about-me">
+            <h4>About Me </h4>
+            <h3>Pharma<span>Vision</span></h3>
+            <p>Pharmavision, sebagai tonggak inovatif dalam dunia kesehatan, memberikan dedikasi untuk meningkatkan pengalaman kesehatan Anda dan menyederhanakan akses yang tak terhindarkan terhadap obat-obatan yang Anda butuhkan. Menggabungkan teknologi canggih dengan keahlian dalam bidang kesehatan, Pharmavision hadir untuk menjadi solusi komprehensif dalam pengelolaan kesehatan, memberikan kemudahan, efisiensi, dan keandalan dalam satu platform terintegrasi.<br> <br> Dengan Pharmavision, Anda tidak hanya mendapatkan aplikasi kesehatan, tetapi juga mitra yang memahami kebutuhan unik Anda. Kami menciptakan ruang yang memungkinkan Anda mengelola kesehatan Anda secara praktis, memberikan solusi yang berfokus pada kepercayaan dan kenyamanan.<br><br> Sebagai pilihan utama, Pharmavision tidak hanya menyediakan akses cepat terhadap konsultasi medis online, tetapi juga mempermudah pengadaan obat-obatan dengan sistem yang terintegrasi. Dengan antarmuka yang ramah pengguna, Pharmavision menjembatani kesenjangan antara kebutuhan kesehatan dan kenyamanan, memberikan layanan yang dapat diandalkan kapan pun dan di mana pun Anda membutuhkannya. <br><br> Pharmavision bukan sekadar aplikasi kesehatan; ini adalah katalisator untuk perubahan positif dalam cara Anda menjaga dan mengelola kesehatan Anda. Bergabunglah dengan kami dalam perjalanan menuju masa depan kesehatan yang lebih baik dan terjangkau. Pharmavision, karena kesehatan Anda layak mendapat yang terbaik. </p>
         </div>
-    </section> -->
-    </div>
+    </section>
+    <!--contact-->
+    <section id="contact">
+        <div class="contact-container">
+            <h2>Hubungi Saya</h2>
+            <form>
+                <label for="name">Nama</label>
+                <input type="text" id="name ">
+                <label for="email">Email</label>
+                <input type="email" id="email ">
+                <label for="pesan">Pesan</label>
+                <textarea name="pesan" id="pesan" cols="30" rows="10"></textarea>
+                <button type="submit">Kirim</button>
+            </form>
+        </div>
+    </section>
 
+    <!--footer-->
     <footer>
-        <div class="Footer">
-            <p>&copy; 2023 Pharmavision</p>
+        <div class="footer-content">
+            <h3>Portofolio</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo iste corrupti doloribus odio sed!</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2023 Portofolio.</p>
         </div>
     </footer>
 </body>

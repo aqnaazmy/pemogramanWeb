@@ -1,159 +1,253 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-/* Global Styles */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+section {
+    padding: 100px 0;
+  }
 body {
-  font-family: Arial, sans-serif;
-  background-color: #00aeff;
-  background-image: url("img/background.jpeg");
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+    background-color: #ffffff;
 }
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 5px;
-  flex-grow: 1;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.navBar{
+    background-color: #0300a5;
+    box-shadow: rgba(0, 47, 255, 0.301) 0px 4px 74px;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    
 }
-
-/* Header Styles */
-header {
-  background-color: #ffffff;
-  color: #fff;
-  padding: 0px 0;
+.navBar nav {
+    display: flex;
+    justify-content: space-between;
+    padding: .5em 15em;
+    align-items: center;
+    
 }
-
-.logo img {
-  max-height: 60px;
-  /* margin-top: 5px; */
+.logo a {
+    display: flex;
+    text-decoration: none;
+    color: #1d2434;
+    align-items: center;
 }
-
-.nav-links {
-  list-style: none;
-  display: flex;
+.logo a img {
+    width: 70px;
+    padding: 12px;
 }
-
-.nav-links li {
-  margin-right: 40px;
+.sideNav ul {
+    list-style: none;
+    display: flex;
+    list-style-type: none;
 }
-
-.nav-links a {
-  text-decoration: none;
-  color: #01115a;
-  font-weight: bold;
-  transition: color 0.3s;
+.sideNav li {
+    padding: 2px 15px;
+    height: 2em;
+    font-size: 15px;
+    position: relative;
+    margin-top: 0.8em;
+    cursor: pointer;
 }
-
-.nav-links a:hover {
-  color: #2980b9;
+.sideNav li a {
+    text-decoration: none;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
-
-/* Main Content Styles */
-.main-content {
-  background-color: #003fac;
-  padding: 20px;
-  /* height: auto; */
-  /* border-radius: 5px; */
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+.sideNav li:hover a {
+    color: rgb(0, 26, 255);
 }
-
-.main-content h2 {
-  font-size: 24px;
-  padding: 30px;
-  margin-top: 0px;
+.sideNav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
 }
-
-.main-content p {
-  font-size: 16px;
-  line-height: 1.6;
+.hero-section {
+    background: url("https://www.gea.com/en/binaries/advancing-pharmaceutical-processing-transforming-the-future-saving-lives_tcm11-91721.jpg") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 300px;
+    overflow: hidden;
+    background-color: #00040B;
 }
-
-.cta-button {
-  display: inline-block;
-  background-color: #3498db;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 18px;
-  margin-top: 20px;
+.hero-section .hero-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 15em;
+    padding-right: 7.5em;
+    align-items: center;
 }
-
-.cta-button:hover {
-  background-color: #2980b9;
+.judul{
+    justify-content: center;
+    color: #ffffff;
 }
-.tbl{
-  margin-top: 20;
-}
-
-/* Styles untuk Tabel */
-table {
-  border-collapse: collapse;
-  width: 80%;
-  margin: 20px auto;
-}
-
-th, td {
-  padding: 10px;
-  border: 2px solid #01115a;
-  text-align: left;
-}
-
-th {
-  background-color: #2980b9;
-}
-
-/* Styles untuk Form */
-form {
-  width: 80%;
-  margin: 20px auto;
-  text-align: left;
-}
-
-label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-input[type="text"], select, textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-input[type="submit"] {
-  background-color: #3498db;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-input[type="submit"]:hover {
-  background-color: #2980b9;
-}
-
-
-/* Footer Styles */
-footer {
-  background: #ffffff;
-  padding: 15px 23px;
-  color: #000000;
+.judul h4 {
+  outline: #ffffff;
   text-align: center;
+  font-size: 60px;
+  padding-bottom: 80px;
+}
+.judul p {
+  text-align: center;
+  font-size: 20px;
+}
+
+.judul .btn {
+    /* background-color: #0056ff; */
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: color 2s ;
+}
+.judul a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    
+}
+.judul .btn:hover{
+    background: none;
+    border: 2px solid #0056ff;
+    color:#ffffff;
+}
+/* aboute */
+.about-me {
+    background-color: #1752c0;
+    padding: 22em 20em;
+    padding-top: 8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffffff;
+}
+.about-me h4 {
+    margin-bottom: 20px;
+    padding-top: 2px;
+    padding-bottom: 25px;
+    font-size: 2em;
+    text-align: center;
+}
+.about-me h3 {
+    text-align: center;
+    padding-bottom: 75px;
+    font-size: 20px;
+}
+.about-me h3 span{
+    padding-bottom: 25px;
+    color: #002061;
+}
+.about-me p {
+    text-align: justify;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+/* artikel */
+.services{
+  padding-top: 0%;
+
+
+}
+.title{
+    text-align: center;
+    color: #0003c2;
+    padding-top: 0%;
+    padding-bottom: 40px;
+    font-size: 20px;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.card{
+    height: 365px;
+    width: 380px;
+    padding: 20px 35px;
+    background: #1752c0;
+    border-radius: 20px;
+    margin: 30px;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+}
+.card h5{
+    color: #00194b;
+    font-size: 23px;
+    margin-bottom: 5px;
+    margin-top: 25px;
+}
+.pra p{
+    padding: 30px 5px;
+    color: #ffffff;
+    font-size: 19px;
+    line-height: 27px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.card:hover {
+    background: rgb(1, 9, 85);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    
+}
+
+#contact {
+  background-color: #1752c0;
+    display: flex;
+    justify-content: center;
+}
+.contact-container {
+    padding: 5em 0;
+    color: #ffffff;
+    width: 750px;
+}
+
+.contact-container h2 {
+    padding-bottom: 25px;
+    font-size: 2em;
+}
+
+input, textarea {
+    flex: 1;
+    padding: 0.5rem;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    width: 100%;
+}
+label {
+    font-size: 1em;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+button {
+    background-color: rgb(12, 39, 194);
+    cursor: pointer;
+    color: #ffffff;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 1.2em;
+    width: 100%;
+    padding: 10px 20px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: none;
 }
